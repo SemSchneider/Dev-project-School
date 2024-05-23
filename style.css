@@ -1,3 +1,4 @@
+/*stage/werk*/
 
 /*header/navbar*/
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
@@ -8,6 +9,27 @@
   box-sizing: border-box;
   font-family: 'Roboto', 'arial';
 }
+h2 {
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .purple {
+    color: purple;
+  }
+  
+  .black {
+    color: black;
+  }
+  
+  .gray {
+    color: gray;
+  }
+  p {
+    font-size: 12px;
+    text-align: center;
+  }
 body{
   background: #fff;
 }
@@ -257,7 +279,7 @@ nav .search-icon{
     right: 0;
     top: 0;
     transform-origin: center;
-    trsnsform: scale(1) translateZ(0);
+    transform: scale(1) translateZ(0);
     transition: 
       filter 200ms linear,
       transform 200ms linear;
@@ -286,21 +308,9 @@ nav .search-icon{
     word-spacing: 100vw;
   }
 /*toelating*/
-:root {
-    --primary: #227093;
-    --secondary: #ff5252;
-    --background: #eee;
-    --highlight: #ffda79;
-    /* Theme color */
-    --theme: var(--primary);
-  }
-  *, *::before, *::after {
-    box-sizing: border-box;
-  }
 
-  
-  /* Core styles/functionality */
-  .tab input {
+/* Core styles/functionality */
+.tab input {
     position: absolute;
     opacity: 0;
     z-index: -1;
@@ -355,7 +365,17 @@ nav .search-icon{
   .accordion--radio {
     --theme: var(--secondary);
   }
+  #how-it-works {
+    display: flex;
+    justify-content: center;
+  }
   
+  #how-it-works > iframe {
+    max-width: 560px;
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
   /* Arrow animation */
   .tab input:not(:checked) + .tab__label:hover::after {
     animation: bounce .5s infinite;
