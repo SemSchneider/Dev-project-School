@@ -25,9 +25,12 @@ h2 {
   
   .gray {
     color: gray;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 18px;
   }
   p {
-    font-size: 12px;
+    font-size: 18px;
     text-align: center;
     margin-bottom: 40px;
   }
@@ -203,6 +206,7 @@ nav .search-icon{
     display: block;
   }
 }
+
 /*opleiding*/
 :root{
     --background-dark: #fff;
